@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Example.MyPage"
+	Title="title">
+
+	<ContentPage.Content>
+		
+		<Grid x:Name="controlGrid" RowSpacing="1" ColumnSpacing="1" > 
+            
+           <Grid.RowDefinitions> 
+               <RowDefinition Height="60" /> 
+               <RowDefinition Height="*" /> 
+               <RowDefinition Height="*" /> 
+               <RowDefinition Height="*" /> 
+           </Grid.RowDefinitions> 
+            
+           <Grid.ColumnDefinitions> 
+               <ColumnDefinition Width="*" /> 
+               <ColumnDefinition Width="*" /> 
+               <ColumnDefinition Width="*" /> 
+           </Grid.ColumnDefinitions> 
+
+			<!--<Label x:Name="timeLabel" Grid.Row="0" Grid.Column="0" Text= "0" Font= "100" />
+			
+
+			<Button x:Name="startButton" Text= "Start" Clicked="start_Clicked" Grid.Row="1" Grid.Column="0"/>
+
+			<Button x:Name="stopButton" Text= "Stop" Clicked ="stop_Clicked" Grid.Row= "2" Grid.Column="0"/>
+			
+			<Button x:Name="resetButton" Text= "Reset" Clicked="reset_Clicked" Grid.Row="3" Grid.Column="0"/>	
+	-->
+		
+		</Grid> 
+		
+	</ContentPage.Content>
+</ContentPage>
