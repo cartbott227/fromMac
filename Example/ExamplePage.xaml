@@ -13,7 +13,7 @@
 				<RowDefinition Height = "*" />
 
 			</Grid.RowDefinitions>
-
+			 
 			<Grid.ColumnDefinitions>
 
 				<ColumnDefinition Width = "*" />
@@ -21,17 +21,20 @@
 
 			</Grid.ColumnDefinitions>
 
-			<Label x:Name="timeLabel" Grid.Row="1" Grid.Column="0" 
-				Text= "0" Font= "10" />
-
-			<Button x:Name="startButton" Grid.Row="2" Grid.Column="0" 
-				Text= "Start" Clicked="start_Clicked" />
-
-			<Button x:Name="stopButton" Grid.Row= "3" Grid.Column="0"
-				Text= "Stop" Clicked ="stop_Clicked" />
+			<Label x:Name= "lapLabel" Grid.Row="1" Grid.Column = "0" Grid.ColumnSpan="2"
+				Text="Previous Lap: " Font= "30"/>
 			
-			<Button x:Name="resetButton" Grid.Row="4" Grid.Column="0"
-				Text= "Reset" Clicked="reset_Clicked" />
+			<Label x:Name="timeLabel" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+				Text= "00.00.00.000" Font= "60" />
+
+			<Button x:Name="startButton" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+				Text= "Start/Lap" Font= "80" Clicked="start_Clicked" />
+
+			<Button x:Name="stopButton" Grid.Row= "4" Grid.Column="0" Grid.ColumnSpan="2"
+				Text= "Stop" Font= "80" Clicked ="stop_Clicked" />
+			
+			<Button x:Name="resetButton" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" 
+				Text= "Reset" Font= "80" Clicked="reset_Clicked" />
 
 		</Grid>
 
